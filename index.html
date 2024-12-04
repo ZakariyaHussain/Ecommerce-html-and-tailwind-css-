@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ecommerce</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .urbanist-font{
+            font-family: "Urbanist", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body class="bg-slate-100" >
+    <!-- header Start -->
+    <header class="space-y-9">
+        <!-- Navbar -->
+        <div class="container mx-auto my-5">
+            <nav class="flex justify-between">
+                <div class="logo flex items-center">
+                    <h1><span class="text-orange-500">e</span>Com</h1>
+                    <i class="fa-solid fa-location-arrow text-orange-500"></i>
+                </div>
+                <div class="menu hidden sm:block">
+                    <ul class="flex gap-8">
+                        <li class="bg-orange-100 text-orange-500 px-1 rounded-md">Home</li>
+                        <li>Shop</li>
+                        <li>Products</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="s-icon hidden sm:block">
+                    <ul class="flex gap-2">
+                        <li><a href="#"><i class="fa-brands fa-facebook text-[#0f92f3]"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin text-[#0a66c2]"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="humbarger sm:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar -->
+
+        <!-- Banner -->
+        <div class="banner relative container flex items-center justify-center text-center mx-auto
+        bg-[url('./img/bg.png')] 
+        bg-no-repeat bg-center bg-cover bg text-white py-28">
+            <div class="absolute inset-0 bg-gradient-to-t from-black opacity-70"></div>
+            <div class="content urbanist-font">
+                <h1 class="text-[55px]">Don't Miss Out on These Unbeatable <br> Black Fridays Deals!</h1>
+                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem odio architecto voluptates, numquam fuga, <br>
+                    consequuntur delectus dolore magni tempora ad, vel quasi similique? Qui beatae deleniti laboriosam reprehenderit, cum fugiat!</p>
+                <button class="bg-orange-600 px-4 py-2 rounded-lg">Explore Now</button>
+                <button class="bg-transparent border px-4 py-2 rounded-lg">Buy Now</button>
+            </div>
+        </div>
+        <!-- Banner -->
+
+        <!-- Add -->
+        <div class="container mx-auto">
+            <div class="add grid grid-cols-2 md:grid-cols-3 gap-6 lg:flex justify-between my-9">
+                <img class="filter grayscale" src="./img/1.jpg" alt="">
+                <img class="filter grayscale" src="./img/2.jpg" alt="">
+                <img class="filter grayscale" src="./img/3.jpg" alt="">
+                <img class="filter grayscale" src="./img/4.jpg" alt="">
+                <img class="filter grayscale" src="./img/5.jpg" alt="">
+                <img class="filter grayscale text-end" src="./img/6.jpg" alt="">
+            </div>
+        </div>
+        <!-- Add -->
+    </header>
+    <!-- header End -->
+
+    <!-- main start -->
+    <main class="container mx-auto space-y-9">
+        <!-- products start-->
+        <section class="p-section my-10 space-y-9">
+            <div class="title-des text-center">
+                <h2 class="urbanist-font text-[35px]">Exclusive Products</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis itaque fugiat labore
+                    possimus tempore unde eligendi?<br> Nesciunt, culpa. Esse cumque saepe, commodi vitae quis
+                     quibusdam reiciendis eum corporis iure praesentium.</p>
+            </div>
+            <div class="products grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="product bg-white p-2 rounded-lg space-y-4">
+                    <div class="img rounded-xl flex justify-center">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="p-title-des">
+                        <h2 class="urbanist-font text-[22px]">Exclusive Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="price flex justify-between">
+                        <div class="amount">
+                            <h4 class="urbanist-font">Price: 1550 Taka</h4>
+                        </div>
+                        <div class="cart urbanist-font bg-slate-100 px-3 py-1">
+                            <span>-</span>
+                            <span>2</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="p-btn urbanist-font space-y-4">
+                        <button class="w-full bg-slate-100 px-4 py-2 rounded-lg">Add to cart</button>
+                        <button class="w-full bg-[#FC63201A] text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product bg-white p-2 rounded-lg space-y-4">
+                    <div class="img rounded-xl flex justify-center">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="p-title-des">
+                        <h2 class="urbanist-font text-[22px]">Exclusive Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="price flex justify-between">
+                        <div class="amount">
+                            <h4 class="urbanist-font">Price: 1550 Taka</h4>
+                        </div>
+                        <div class="cart urbanist-font bg-slate-100 px-3 py-1">
+                            <span>-</span>
+                            <span>2</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="p-btn urbanist-font space-y-4">
+                        <button class="w-full bg-slate-100 px-4 py-2 rounded-lg">Add to cart</button>
+                        <button class="w-full bg-[#FC63201A] text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg">Buy Now</button>
+                    </div>
+        
+                </div>
+                <div class="product bg-white p-2 rounded-lg space-y-4">
+                    <div class="img rounded-xl flex justify-center">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="p-title-des">
+                        <h2 class="urbanist-font text-[22px]">Exclusive Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="price flex justify-between">
+                        <div class="amount">
+                            <h4 class="urbanist-font">Price: 1550 Taka</h4>
+                        </div>
+                        <div class="cart urbanist-font bg-slate-100 px-3 py-1">
+                            <span>-</span>
+                            <span>2</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="p-btn urbanist-font space-y-4">
+                        <button class="w-full bg-slate-100 px-4 py-2 rounded-lg">Add to cart</button>
+                        <button class="w-full bg-[#FC63201A] text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg">Buy Now</button>
+                    </div>
+        
+                </div>
+                <div class="product bg-white p-2 rounded-lg space-y-4">
+                    <div class="img rounded-xl flex justify-center">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="p-title-des">
+                        <h2 class="urbanist-font text-[22px]">Exclusive Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="price flex justify-between">
+                        <div class="amount">
+                            <h4 class="urbanist-font">Price: 1550 Taka</h4>
+                        </div>
+                        <div class="cart urbanist-font bg-slate-100 px-3 py-1">
+                            <span>-</span>
+                            <span>2</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="p-btn urbanist-font space-y-4">
+                        <button class="w-full bg-slate-100 px-4 py-2 rounded-lg">Add to cart</button>
+                        <button class="w-full bg-[#FC63201A] text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg">Buy Now</button>
+                    </div>
+        
+                </div>
+                <div class="product bg-white p-2 rounded-lg space-y-4">
+                    <div class="img rounded-xl flex justify-center">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="p-title-des">
+                        <h2 class="urbanist-font text-[22px]">Exclusive Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="price flex justify-between">
+                        <div class="amount">
+                            <h4 class="urbanist-font">Price: 1550 Taka</h4>
+                        </div>
+                        <div class="cart urbanist-font bg-slate-100 px-3 py-1">
+                            <span>-</span>
+                            <span>2</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="p-btn urbanist-font space-y-4">
+                        <button class="w-full bg-slate-100 px-4 py-2 rounded-lg">Add to cart</button>
+                        <button class="w-full bg-[#FC63201A] text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg">Buy Now</button>
+                    </div>
+        
+                </div>
+                <div class="product bg-white p-2 rounded-lg space-y-4">
+                    <div class="img rounded-xl flex justify-center">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="p-title-des">
+                        <h2 class="urbanist-font text-[22px]">Exclusive Products</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="price flex justify-between">
+                        <div class="amount">
+                            <h4 class="urbanist-font">Price: 1550 Taka</h4>
+                        </div>
+                        <div class="cart urbanist-font bg-slate-100 px-3 py-1">
+                            <span>-</span>
+                            <span>2</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="p-btn urbanist-font space-y-4">
+                        <button class="w-full bg-slate-100 px-4 py-2 rounded-lg">Add to cart</button>
+                        <button class="w-full bg-[#FC63201A] text-orange-600 hover:bg-orange-600 hover:text-white px-4 py-2 rounded-lg">Buy Now</button>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="a-p-btn text-center">
+                <button class="bg-orange-600 text-white px-4 py-2 rounded-lg">View All Products</button>
+            </div>
+        </section>
+        <!-- products end-->
+
+        <!-- client start -->
+         <section class="clients grid sm:grid-cols-2 gap-6 md:flex justify-around py-8">
+            <div class="client flex flex-col justify-center items-center">
+                <img src="./img/product.png" alt="">
+                <h2 class="urbanist-font text-[48px] font-extrabold">1500+</h2>
+                <p class="urbanist-font">Products</p>
+             </div>
+             <div class="client flex flex-col justify-center items-center">
+                <img src="./img/sell.png" alt="">
+                <h2 class="urbanist-font text-[48px] font-extrabold">1500+</h2>
+                <p class="urbanist-font">Sells</p>
+             </div>
+             <div class="client flex flex-col justify-center items-center">
+                <img src="./img/group.png" alt="">
+                <h2 class="urbanist-font text-[48px] font-extrabold">1500+</h2>
+                <p class="urbanist-font">Happy Customer</p>
+             </div>
+             <div class="client flex flex-col justify-center items-center">
+                <img src="./img/link.png" alt="">
+                <h2 class="urbanist-font text-[48px] font-extrabold">1500+</h2>
+                <p class="urbanist-font">Team Member</p>
+             </div>
+         </section>
+         <!-- client end -->
+
+         <!-- registration Start -->
+          <section class="registration space-y-9">
+            <div class="title-des text-center">
+                <h2 class="urbanist-font text-[35px]">Create Account</h2>
+                <p>Save big this Black Friday with unbeatable deals on tech, home essentials, fashion, and more! Limited stock.</p>
+            </div>
+            
+            <form class="md:flex justify-around bg-white p-4" action="">
+                <div class="f-img">
+                    <img src="./img/form.png" alt="">
+                </div>
+                <div class="form space-y-2">
+                    <div class="name space-y-2">
+                        <label class="block font-bold" for="name">Name</label>
+                        <div class="f-btn flex gap-4">
+                            <input class="w-1/2 border rounded-lg px-3 py-2" type="text" placeholder="First Name">
+                            <input class="border rounded-lg w-1/2 px-3 py-2" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="email space-y-2">
+                        <label class="block font-bold" for="email">Email</label>
+                        <input class="w-full border rounded-lg px-3 py-2" type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="password space-y-2">
+                        <label class="block font-bold" for="password">Password</label>
+                        <input class="w-full border rounded-lg px-3 py-2" type="password" placeholder="Type Your Password">
+                    </div>
+                    <div class="age space-y-2">
+                        <label class="block font-bold" for="age">Age</label>
+                        <input class="w-full border rounded-lg px-3 py-2" type="number" placeholder="Enter Your age">
+                    </div>
+                    <div class="dropdown flex gap-4">
+                        <div class="gender w-1/2 space-y-2">
+                            <label class="block font-bold" for="gender">Gender</label>
+                            <select class="border rounded-lg w-full px-3 py-2" name="gender" id="gender" placeholder="Type your gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="country w-1/2 space-y-2">
+                            <label class="block font-bold" for="country">Country</label>
+                            <select class="border rounded-lg w-full px-3 py-2" name="country" id="country" placeholder="Type your country">
+                                <option>Bangladesh</option>
+                                <option>USA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+          </section>
+         <!-- registration end -->
+
+         <!-- testimonial start -->
+          <section class="testimonial py-10">
+            <div class="t-heading flex justify-between relative">
+                <div class="t-title-des">
+                    <h2 class="urbanist-font text-[35px]">What our Customer Says</h2>
+                    <p>Save big this Black Friday with unbeatable deals on tech, home essentials,<br> fashion, and more! Limited stock.</p>
+                </div>
+                <div class="arrow flex absolute bottom-0 right-0">
+                    <span><img src="./img/left-arrow.png" alt=""></span>
+                    <span><img src="./img/right-arrow.png" alt=""></span>
+                </div>
+            </div>
+            <div class="t-cards grid md:grid-cols-2 lg:grid-cols-4 gap-2 my-8">
+                <div class="card bg-white p-6 space-y-5">
+                    <div class="t-img-head flex gap-3">
+                        <div class="img rounded-xl flex justify-center">
+                            <img src="./img/t-1.png" alt="">
+                        </div>
+                        <div class="p-title-des">
+                            <h2 class="urbanist-font text-[22px]">Abu Hurayra</h2>
+                            <p>CEO, ZH Agency</p>
+                        </div>
+                    </div>
+                    <div class="t-desc">
+                        <p>Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech.</p>
+                    </div>
+                    <div class="review flex gap-4">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <p>(5.0)</p>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 space-y-5">
+                    <div class="t-img-head flex gap-3">
+                        <div class="img rounded-xl flex justify-center">
+                            <img src="./img/t-1.png" alt="">
+                        </div>
+                        <div class="p-title-des">
+                            <h2 class="urbanist-font text-[22px]">Abu Hurayra</h2>
+                            <p>CEO, ZH Agency</p>
+                        </div>
+                    </div>
+                    <div class="t-desc">
+                        <p>Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech.</p>
+                    </div>
+                    <div class="review flex gap-4">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <p>(5.0)</p>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 space-y-5">
+                    <div class="t-img-head flex gap-3">
+                        <div class="img rounded-xl flex justify-center">
+                            <img src="./img/t-1.png" alt="">
+                        </div>
+                        <div class="p-title-des">
+                            <h2 class="urbanist-font text-[22px]">Abu Hurayra</h2>
+                            <p>CEO, ZH Agency</p>
+                        </div>
+                    </div>
+                    <div class="t-desc">
+                        <p>Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech.</p>
+                    </div>
+                    <div class="review flex gap-4">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <p>(5.0)</p>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 space-y-5">
+                    <div class="t-img-head flex gap-3">
+                        <div class="img rounded-xl flex justify-center">
+                            <img src="./img/t-1.png" alt="">
+                        </div>
+                        <div class="p-title-des">
+                            <h2 class="urbanist-font text-[22px]">Abu Hurayra</h2>
+                            <p>CEO, ZH Agency</p>
+                        </div>
+                    </div>
+                    <div class="t-desc">
+                        <p>Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech. Save big this Black Friday with unbeatable deals on tech.</p>
+                    </div>
+                    <div class="review flex gap-4">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <img src="./img/star.png" alt="">
+                        <p>(5.0)</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+         <!-- testimonial end -->
+    </main>
+    <!-- main end -->
+
+    <!-- Footer start -->
+
+    <footer>
+        <section class="footer bg-white flex flex-col justify-center items-center space-y-2 md:space-y-9 py-4 my-10">
+            <div class="footer-logo flex flex-col justify-center items-center">
+                <div class="logo flex items-center">
+                    <h1><span class="text-orange-500">e</span>Com</h1>
+                    <i class="fa-solid fa-location-arrow text-orange-500"></i>
+                </div>
+                <p class="text-center">Save big this Black Friday with unbeatable deals on tech, home essentials, fashion, and more! Limited stock.</p>
+            </div>
+            <div class="footer-menu">
+                <div class="menu hidden sm:block">
+                    <ul class="flex gap-8">
+                        <li class="bg-orange-100 text-orange-500 px-1 rounded-md">Home</li>
+                        <li>Shop</li>
+                        <li>Products</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-icon">
+                <div class="s-icon">
+                    <ul class="flex gap-8">
+                        <li><a href="#"><i class="fa-brands fa-facebook text-[#0f92f3]"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin text-[#0a66c2]"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <!-- Footer end -->
+    
+</body>
+</html>
